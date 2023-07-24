@@ -16,7 +16,7 @@ node {
     stage('code checkout'){
         try{
         echo 'code checkout'
-        git 'https://github.com/niladrimondal/insure-me.git'
+        git 'https://github.com/rahulk8/insure-me.git'
         }
         catch(Exception e){
             echo 'exception occur in stage code checkout'
