@@ -43,7 +43,7 @@ node {
         //restart Jenkins
         //or add sudoers file below line
         //jenkins ALL=(ALL) NOPASSWD:ALL
-        sh "${dockerCMD} build -t niladrimondaldcr/insureme:${tagName} ."
+        sh "${dockerCMD} build -t rahul9711/insureme:${tagName} ."
         }
         catch(Exception e){
             echo 'exception occur in stage code checkout'
