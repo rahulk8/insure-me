@@ -1,4 +1,4 @@
-/* package insuremeseleniumproject;
+package insuremeseleniumproject;
 
 import java.io.File;
 import java.io.IOException;
@@ -58,4 +58,4 @@ public class insureMe {
 		driver.quit();
 		
 	}
-} */
+} 
