@@ -54,7 +54,7 @@ node {
     }
     stage ('push docker image to dockerhub')
     echo 'pushing the docker image to DockerHub'
-    withCredentials([string(credentialsId: 'dockerpass', variable: 'dockerpassword')]) {
+    withCredentials([string(credentialsId: 'DockerPassword', variable: 'dockerpassword')]) {
     sh "${dockerCMD} login -u rahul9711 -p ${dockerpassword}"
     sh "${dockerCMD} push rahul9711/insureme:${tagName}"
     }
