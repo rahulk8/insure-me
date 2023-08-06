@@ -29,7 +29,7 @@ public class insureMe {
 		chromeOptions.addArguments("--disable-dev-shm-usage");
 		
 		
-		WebDriver driver = new ChromeDriver(chromeOptions);
+		driver = new ChromeDriver(chromeOptions);
 		//driver.get("http://localhost:8081/contact.html");
 		driver.get("http://65.0.4.67:8084/contact.html");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
