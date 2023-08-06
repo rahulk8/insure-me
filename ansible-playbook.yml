@@ -11,10 +11,10 @@
     become : yes
     become_user : root
 
-  - name : Start Docker Service
-    command : sudo systemctl start docker
-    become : yes
-    become_user : root
+  #- name : Start Docker Service
+   # command : sudo systemctl start docker
+    #become : yes
+    #become_user : root
   
   #- name: Stop the http_server1 container
    # docker_container:
