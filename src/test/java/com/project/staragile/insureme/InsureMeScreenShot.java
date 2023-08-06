@@ -34,6 +34,7 @@ public class InsureMeScreenShot {
 	public static void main(String[] args) throws InterruptedException, IOException {
                    WebDriverManager.chromedriver().setup();
 		   WebDriver driver = new ChromeDriver();
+		   driver.manage().window().maximize();
 		//System.setProperty("webdriver.chrome.driver","G:\\chrome-driver\\chromedriver.exe");
 		 
 		//System.setProperty("webdriver.chrome.driver","//home//ubuntu//chromedriver-linux64//chromedriver");
