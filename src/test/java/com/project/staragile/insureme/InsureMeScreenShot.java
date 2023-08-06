@@ -1,4 +1,4 @@
-/* package insuremeseleniumproject;
+package insuremeseleniumproject;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,9 +16,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class insureMe {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
+                   WebDriverManager.chromedriver().setup();
+		   WebDriver driver = new ChromeDriver();
 		//System.setProperty("webdriver.chrome.driver","G:\\chrome-driver\\chromedriver.exe");
 		 
-		System.setProperty("webdriver.chrome.driver","//home//ubuntu//chromedriver-linux64//chromedriver");
+		//System.setProperty("webdriver.chrome.driver","//home//ubuntu//chromedriver-linux64//chromedriver");
 		//System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/chromedriver");
 		
 		ChromeOptions chromeOptions = new ChromeOptions();
@@ -44,6 +46,7 @@ public class insureMe {
 		{
 			System.out.println("Script Failed");
 		}
+		
 		//take Screenshot of the result
 		TakesScreenshot scrShot = ((TakesScreenshot)driver);
 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);
@@ -58,4 +61,4 @@ public class insureMe {
 		driver.quit();
 		
 	}
-} */
+}
