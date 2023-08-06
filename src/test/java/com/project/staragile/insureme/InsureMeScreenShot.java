@@ -67,8 +67,8 @@ public class InsureMeScreenShot {
 		TakesScreenshot scrShot = ((TakesScreenshot)driver);
 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);
 		//File destFile = new File ("C:\\chromedriver\\test-reports\\scr.png");
-		File destFile = new File ("//home/ubuntu//scr.png");
-		//File destFile = new File ("//var/lib/jenkins//scr.png");
+		//File destFile = new File ("//home/ubuntu//scr.png");
+		File destFile = new File ("//var/lib/jenkins//scr.png");
 		//File destFile = new File ("./scr.png");
 		FileUtils.copyFile(screenShot, destFile);
 		
