@@ -60,7 +60,7 @@ node {
     }
     
     stage ('Configure and Deploy to the test-server'){
-        ansiblePlaybook become: true, disableHostKeyChecking: true, installation: 'myAnsible', inventory: '/etc/ansible/hosts', playbook: 'ansible-playbook.yml'
-    }
+        ansiblePlaybook become: true, credentialsId: 'ansiblekey1', disableHostKeyChecking: true, installation: 'myAnsible', inventory: '/etc/ansible/hosts', playbook: 'ansible-playbook.yml'
+        }
     
 }
